@@ -8,4 +8,4 @@ ollama
 python-dotenv
 fpdf
 sqlalchemy
-
+PyJWT
