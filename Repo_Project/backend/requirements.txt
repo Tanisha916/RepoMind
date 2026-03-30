@@ -7,3 +7,5 @@ requests
 ollama
 python-dotenv
 fpdf
+sqlalchemy
+
