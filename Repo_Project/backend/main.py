@@ -12,7 +12,7 @@ import tempfile
 import subprocess
 import uuid
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-FRONTEND_DIR = os.path.join(BASE_DIR, "..", "frontend")
+FRONTEND_DIR = os.path.abspath("Repo_Project/frontend")
 
 
 # Create DB tables
