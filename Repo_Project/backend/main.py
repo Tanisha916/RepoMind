@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from fastapi.responses import FileResponse
 from sqlalchemy.orm import Session
-import models, schemas, auth, database, analyzer, llm_service, file_breakdown, doc_generator
+from backend import models, schemas, auth, database, analyzer, llm_service, file_breakdown ,doc_generator
 from database import engine, get_db
 import os
 import shutil
