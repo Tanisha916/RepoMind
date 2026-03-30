@@ -11,11 +11,15 @@ import shutil
 import tempfile
 import subprocess
 import uuid
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+FRONTEND_DIR = os.path.join(BASE_DIR, "..", "frontend")
+
 
 # Create DB tables
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="RepoMind API")
+app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
 
 REPO_CACHE = {}
 BREAKDOWN_PREVIEW_CACHE = {}
