@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from backend.pydantic import BaseModel
 
 class UserCreate(BaseModel):
     username: str

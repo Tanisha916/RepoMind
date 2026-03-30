@@ -1,5 +1,5 @@
 import ollama
-import doc_generator
+import backend import doc_generator
 
 # =========================
 # FILE EXPLANATION (WORKS FINE)
