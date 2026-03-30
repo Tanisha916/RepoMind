@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RepoMind - AI Repository Analyzer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  
+  <div class="auth-container">
+    <div class="auth-card glass" id="auth-panel">
+      
+      <div class="auth-header">
+        <h1>RepoMind</h1>
+        <p>AI-Powered Repository Insights</p>
+      </div>
+      
+      <div id="alert-box" class="alert"></div>
+
+      <!-- Login Form -->
+      <form id="login-form">
+        <div class="form-group">
+          <label class="form-label" for="login-username">Username</label>
+          <input type="text" id="login-username" class="form-input" required placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-input" required placeholder="Enter your password">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+        <div class="switch-auth">
+          Don't have an account? <a href="#" id="show-signup">Sign Up</a>
+        </div>
+      </form>
+
+      <!-- Signup Form -->
+      <form id="signup-form" class="hidden">
+        <div class="form-group">
+          <label class="form-label" for="signup-username">Username</label>
+          <input type="text" id="signup-username" class="form-input" required placeholder="Choose a username">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="signup-password">Password</label>
+          <input type="password" id="signup-password" class="form-input" required placeholder="Create a password">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+        <div class="switch-auth">
+          Already have an account? <a href="#" id="show-login">Sign In</a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
